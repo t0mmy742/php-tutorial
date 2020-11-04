@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% include 'templates/partials/navbar.html.twig' %}
+
+    <div id="wrapper">
+        <div id="content-wrapper">
+            <main>
+                {% block content %}{% endblock %}
+            </main>
+            <footer>
+                <p><small>&copy; {{ "now"|date("Y") }} Thomas LE BERRE - All Rights Reserved.</small></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

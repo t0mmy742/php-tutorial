@@ -1,0 +1,14 @@
+{% extends 'templates/app.html.twig' %}
+{% block content %}
+    <section>
+        <div>
+            Error 404
+            <button id="btn-back">Go back</button>
+        </div>
+    </section>
+    <script>
+        document.getElementById('btn-back').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+{% endblock %}
